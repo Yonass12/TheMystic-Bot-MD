@@ -1,7 +1,7 @@
 import translate from '@vitalets/google-translate-api';
 import fetch from 'node-fetch';
 const handler = async (m, {args, usedPrefix, command}) => {
-  const msg = `*_ترجم إلى🌏 أي لغة🎋 أحببت _*`;
+  const msg = `*_ترجم إلى🌏 أي لغة🎋 أحببت_*`;
   if (!args || !args[0]) return m.reply(msg);
   let lang = args[0];
   let text = args.slice(1).join(' ');
