@@ -1,7 +1,8 @@
 import fetch from 'node-fetch' 
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) return m.reply("*_🎋LOADING🎋_*")
+    if (!text) return m.reply('هذا الامر خاص بتوليد صور من rsm سوف أعطيك مثالا تكتب هكذا :\n\n*_.rsm_* a 26 years old boy salutes the national flag of morocco and he is wearing a shirt print is likemorocco flag and "EL KOBY" and 10 number anddima meghribe in small is written on it s back inbig and bold fonts, 3d illustration')
+    m.reply("*_🎋LOADING🎋_*")
 
     try {
         let response = await fetch(`https://api.maelyn.my.id/api/bingimage?prompt=${text}&apikey=nkI6Qg3tfZ`)
@@ -20,6 +21,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ["bimg *<prompt>*"]
 handler.tags = ["ai"]
-handler.command = ["kb"]
+handler.command = ["rsm"]
 
 export default handler
