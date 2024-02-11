@@ -8,6 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.botnumber = ""
+global.confirmCode = ""
 
 global.owner = [
   ['5219992095479', '👑 Mystic - Creador 👑', true],
@@ -33,6 +34,7 @@ global.owner = [
   ['50497150165'],
   ['51906662557'],
   ['573183650526'], 
+  ['5217441298510'], 
   ['595992611272']
 ];
 
